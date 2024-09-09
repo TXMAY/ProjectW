@@ -8,6 +8,14 @@ if(!place_meeting(x+move_x*move_speed,y,obj_collision))	// 옆에 땅이 없다�
 {
 	x+=move_x*move_speed;	// 좌우 이동
 }
+else
+{
+	if(!place_meeting(x+sign(move_x),y,obj_collision))	// 덜 붙었다면
+	{
+		x+=sign(move_x);	// 붙을 때까지 이동
+	}
+}
+
 
 if(move_y<4) move_y++;	// 중력 추가
 
@@ -28,3 +36,9 @@ if(place_meeting(x,y+1,obj_collision) and keyboard_check_pressed(vk_space))	// �
 {
 	move_y=-12;
 }
+
+// 스프라이트 변경
+if(move_y>0) sprite_index=spr_player_fall;	// 떨어지는 중
+else if(move_y<0) sprite_index=spr_player_jump	// 뛰는 중
+else if(move_x!=0) sprite_index=spr_player_walk // 걷는 중
+else sprite_index=spr_player_idle	// 기본
