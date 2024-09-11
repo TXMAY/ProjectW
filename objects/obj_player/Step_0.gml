@@ -31,14 +31,26 @@ else	// 아니라면 땅이 있다면 완전히 붙었는지 확인
 	move_y=0;	// 초기화
 }
 
+if(state="attack")
+{
+	//image_index=0;
+	
+	if(place_meeting(x,y+1,obj_collision))
+	{
+		sprite_index=spr_player_attack1;
+		move_speed=0;
+	}
+	else sprite_index=spr_player_attack_air1;
+}
+
 
 // 스프라이트 변경
-if(state!=STATE.ATTACK)
+if(state!="attack")
 {
 	if(move_x!=0) image_xscale=move_x;	// 스프라이트 좌우 방향
 	
 	if(move_y>0) sprite_index=spr_player_fall;	// 떨어지는 중
 	else if(move_y<0) sprite_index=spr_player_jump;	// 뛰는 중
-	else if(move_x!=0) sprite_index=spr_player_walk; // 걷는 중
+	else if(move_x!=0) sprite_index=spr_player_move; // 걷는 중
 	else sprite_index=spr_player_idle;	// 기본
 }

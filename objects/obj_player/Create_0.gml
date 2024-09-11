@@ -5,11 +5,4 @@ move_speed=4;	// 이동 속도
 move_x=0;		// 좌우 이동
 move_y=0;		// 상하 이동
 
-enum STATE{		// 캐릭터 상태
-	IDLE,
-	MOVE,
-	JUMP,
-	ATTACK,
-	FALL
-}
-state=STATE.IDLE;
+state=player_state();	// 캐릭터 상태
