@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"player_state",
+  "%Name":"change_sprite",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"player_state",
+  "name":"change_sprite",
   "parent":{
-    "name":"Player",
-    "path":"folders/Scripts/Player.yy",
+    "name":"Sprite",
+    "path":"folders/Scripts/Sprite.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

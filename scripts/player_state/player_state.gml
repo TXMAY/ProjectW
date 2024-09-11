@@ -1,21 +1,14 @@
-// v2.3.0에 대한 스크립트 어셋 변경됨 자세한 정보는
-// https://help.yoyogames.com/hc/en-us/articles/360005277377 참조
+// 이동 중에도 공격이나 점프를 할 수 있어야 하기에 나중에 move 스크립트를 기본으로 변경
 function player_state(){
-	var _state="";
-	if(!string_pos("attack", sprite_get_name(sprite_index)))
+	// 
+	show_debug_message("player_state");
+	change_sprite(spr_player_idle);
+	move_speed=4;	// 공격 중이 아니면 속도 원상 복구
+	if(keyboard_check_pressed(ord("Z")))
 	{
-		if(keyboard_check_pressed(ord("Z")))
-		{
-			if(!place_meeting(x,y+1,obj_collision))
-			{
-				_state="attack_air";
-			}
-			else _state="attack";
-		}
-		else if(move_y>0) _state="fall";
-		else if(move_y<0) _state="jump";
-		else if(keyboard_check(vk_left)^keyboard_check_pressed(vk_right)) _state="move"
-		else _state="idle";
+		state=player_attack;
 	}
-	return _state;
+	else if(move_y>0) state=player_fall;
+	else if(move_y<0) state=player_jump;
+	else if(move_x!=0) state=player_move;
 }

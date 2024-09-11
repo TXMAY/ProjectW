@@ -10,9 +10,9 @@
 	//	move_speed=0;
 	//}
 	//else sprite_index=spr_player_attack_air1;
-//}
+////}
 
-if(state!="attack")
-{
-	image_index=0;
-}
+//if(state!="attack")
+//{
+//	image_index=0;
+//}
