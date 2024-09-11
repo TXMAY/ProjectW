@@ -5,4 +5,8 @@ move_speed=4;	// 이동 속도
 move_x=0;		// 좌우 이동
 move_y=0;		// 상하 이동
 
-state=player_state;	// 캐릭터 상태
+grounded=false;	// 땅 위에 서 있는지 유무
+
+state=player_move;	// 캐릭터 상태
+
+//game_set_speed(10, gamespeed_fps);

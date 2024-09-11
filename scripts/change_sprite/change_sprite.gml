@@ -3,7 +3,7 @@
 function change_sprite(_name){
 	if(sprite_index!=_name)
 	{
-		sprite_index=_name;
 		image_index=0;
+		sprite_index=_name;
 	}
 }
