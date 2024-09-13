@@ -7,6 +7,4 @@ move_y=0;		// 상하 이동
 
 grounded=false;	// 땅 위에 서 있는지 유무
 
-state=player_move;	// 캐릭터 상태
-
-//game_set_speed(10, gamespeed_fps);
+state="idle";	// 캐릭터 상태
