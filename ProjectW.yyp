@@ -59,6 +59,7 @@
     {"id":{"name":"spr_player_attack1","path":"sprites/spr_player_attack1/spr_player_attack1.yy",},},
     {"id":{"name":"spr_player_attack2","path":"sprites/spr_player_attack2/spr_player_attack2.yy",},},
     {"id":{"name":"spr_player_attack3","path":"sprites/spr_player_attack3/spr_player_attack3.yy",},},
+    {"id":{"name":"spr_player_damaged","path":"sprites/spr_player_damaged/spr_player_damaged.yy",},},
     {"id":{"name":"spr_player_fall","path":"sprites/spr_player_fall/spr_player_fall.yy",},},
     {"id":{"name":"spr_player_idle","path":"sprites/spr_player_idle/spr_player_idle.yy",},},
     {"id":{"name":"spr_player_jump","path":"sprites/spr_player_jump/spr_player_jump.yy",},},
