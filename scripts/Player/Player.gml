@@ -5,6 +5,8 @@ function player_attack(){
 	if(!check_state("attack"))
 	{
 		var _collision=instance_create_depth(obj_player.x,obj_player.y,obj_player.depth+1,obj_player_attack);
+		_collision.image_xscale=image_xscale;
+		_collision.image_speed=image_speed;
 		if(grounded)	// 땅 위면
 		{
 			// 지상 공격
@@ -25,5 +27,6 @@ function player_attack(){
 				change_sprite(spr_player_attack_air1_mask);
 			}
 		}
+		_collision.state=state;
 	}
 }

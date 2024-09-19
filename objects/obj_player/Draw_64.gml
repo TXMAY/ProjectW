@@ -6,4 +6,3 @@ draw_text(x,y+20,image_number);
 draw_text(x,y+30,image_index);
 draw_text(x,y+40,invincibility);
 draw_text(x,y+50,image_speed);
-draw_text(x,y+60,other.id);

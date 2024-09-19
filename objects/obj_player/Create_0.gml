@@ -4,6 +4,7 @@
 move_speed=2;	// 이동 속도
 move_x=0;		// 좌우 이동
 move_y=0;		// 상하 이동
+life=3;			// 목숨
 
 grounded=false;	// 땅 위에 서 있는지 유무
 
