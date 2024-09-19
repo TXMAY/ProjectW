@@ -20,7 +20,7 @@ if(move_x!=0 and state!="attack" and state!="damaged")
 }
 	
 // 상하 이동
-if(move_y<12) move_y++;	// 중력 추가
+if(move_y<4) move_y+=0.5;	// 중력 추가
 
 if(!place_meeting(x,y+move_y,obj_collision))	// 밑에 땅이 없다면
 {
@@ -37,7 +37,7 @@ else	// 아니라면 땅이 있다면 완전히 붙었는지 확인
 	move_y=0;	// 초기화
 	grounded=true;
 }
-if(check_state("attack_air") and grounded) state="idle";
+if(state=="attack_air" and grounded) state="idle";
 if(state=="damaged") change_sprite(spr_player_damaged);
 // 스프라이트 변경
 if(!check_state("attack") and state!="damaged")
