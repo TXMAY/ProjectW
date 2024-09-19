@@ -3,8 +3,8 @@
 move_x=keyboard_check(vk_right)-keyboard_check(vk_left);	// 방향 결정
 
 // 좌우 이동
-// 지상 공격이 아니고 때만 이동
-if(move_x!=0 and state!="attack" and state!="damaged")
+// 지상 공격이 아니고 데미지를 받지 않았을 때만 이동
+if(move_x!=0 and (state=="move" or state=="attack_air"))
 {
 	if(!place_meeting(x+move_x*move_speed,y,obj_collision))	// 옆에 땅이 없다면
 	{
@@ -17,6 +17,9 @@ if(move_x!=0 and state!="attack" and state!="damaged")
 			x+=sign(move_x);	// 붙을 때까지 이동
 		}
 	}
+}else if(state=="roll")	// 구르기 이동
+{
+	x+=move_speed*1.5*image_xscale;
 }
 	
 // 상하 이동
@@ -37,10 +40,12 @@ else	// 아니라면 땅이 있다면 완전히 붙었는지 확인
 	move_y=0;	// 초기화
 	grounded=true;
 }
-if(state=="attack_air" and grounded) state="idle";
+if(state=="attack_air" and grounded) state="move";
 if(state=="damaged") change_sprite(spr_player_damaged);
+
 // 스프라이트 변경
-if(!check_state("attack") and state!="damaged")
+//if(!check_state("attack") and state!="damaged")
+if(state=="move")
 {
 	if(move_x!=0) image_xscale=move_x;	// 스프라이트 좌우 방향
 	

@@ -7,7 +7,11 @@ move_y=0;		// 상하 이동
 
 grounded=false;	// 땅 위에 서 있는지 유무
 
-state="idle";	// 캐릭터 상태
+state="move";	// 캐릭터 상태
+// move : 기본(이동/점프)
+// attack : 공격
+// damaged : 피격
+
 invincibility=false;	// 무적 여부
 
 //game_set_speed(15, gamespeed_fps);
