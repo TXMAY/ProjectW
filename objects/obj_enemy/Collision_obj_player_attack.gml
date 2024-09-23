@@ -5,6 +5,7 @@ if(check_attack() and !check_states_compare("damaged"))
 {
 	// 공격 받은 상태로 변경
 	state="damaged";
+	life--;
 	image_index=3;
 	alarm[0]=game_get_speed(gamespeed_fps)/2;
 }

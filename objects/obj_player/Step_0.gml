@@ -4,7 +4,8 @@ move_x=keyboard_check(vk_right)-keyboard_check(vk_left);	// 방향 결정
 
 // 좌우 이동
 // 지상 공격이 아니고 데미지를 받지 않았을 때만 이동
-if(move_x!=0 and check_states_compare("move","attack_air"))
+//if(move_x!=0 and check_states_compare("move","attack_air"))
+if(check_states_compare("move","attack_air"))
 {
 	if(!place_meeting(x+move_x*move_speed,y,obj_collision))	// 옆에 땅이 없다면
 	{

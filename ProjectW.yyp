@@ -40,10 +40,12 @@
   "name":"ProjectW",
   "resources":[
     {"id":{"name":"obj_collision","path":"objects/obj_collision/obj_collision.yy",},},
+    {"id":{"name":"obj_enemy_generator","path":"objects/obj_enemy_generator/obj_enemy_generator.yy",},},
     {"id":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},},
     {"id":{"name":"obj_player_attack","path":"objects/obj_player_attack/obj_player_attack.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
-    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"rm_game","path":"rooms/rm_game/rm_game.yy",},},
+    {"id":{"name":"rm_gameover","path":"rooms/rm_gameover/rm_gameover.yy",},},
     {"id":{"name":"change_sprite","path":"scripts/change_sprite/change_sprite.yy",},},
     {"id":{"name":"Player","path":"scripts/Player/Player.yy",},},
     {"id":{"name":"State","path":"scripts/State/State.yy",},},
@@ -60,6 +62,7 @@
     {"id":{"name":"spr_player_attack2","path":"sprites/spr_player_attack2/spr_player_attack2.yy",},},
     {"id":{"name":"spr_player_attack3","path":"sprites/spr_player_attack3/spr_player_attack3.yy",},},
     {"id":{"name":"spr_player_damaged","path":"sprites/spr_player_damaged/spr_player_damaged.yy",},},
+    {"id":{"name":"spr_player_die","path":"sprites/spr_player_die/spr_player_die.yy",},},
     {"id":{"name":"spr_player_fall","path":"sprites/spr_player_fall/spr_player_fall.yy",},},
     {"id":{"name":"spr_player_idle","path":"sprites/spr_player_idle/spr_player_idle.yy",},},
     {"id":{"name":"spr_player_jump","path":"sprites/spr_player_jump/spr_player_jump.yy",},},
@@ -69,7 +72,8 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"rm_game","path":"rooms/rm_game/rm_game.yy",},},
+    {"roomId":{"name":"rm_gameover","path":"rooms/rm_gameover/rm_gameover.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
