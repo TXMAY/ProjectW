@@ -18,8 +18,7 @@ if(check_states_compare("move","attack_air"))
 			x+=sign(move_x);	// 붙을 때까지 이동
 		}
 	}
-}
-if(check_states_compare("roll"))	// 구르기 이동
+}else if(check_states_compare("roll"))	// 구르기 이동
 {
 	if(!place_meeting(x+move_speed*1.5*image_xscale,y,obj_collision))	// 옆에 땅이 없다면
 	{

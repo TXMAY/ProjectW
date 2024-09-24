@@ -6,4 +6,5 @@ if(check_attack() and invincibility==false)
 	state="damaged";
 	life--;
 	invincibility=true;
+	health_bar_flag=true;
 }

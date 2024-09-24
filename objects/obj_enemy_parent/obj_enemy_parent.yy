@@ -1,15 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"obj_collision",
+  "%Name":"obj_enemy_parent",
   "eventList":[],
   "managed":true,
-  "name":"obj_collision",
+  "name":"obj_enemy_parent",
   "overriddenProperties":[],
   "parent":{
-    "name":"Common",
-    "path":"folders/Objects/Common.yy",
+    "name":"Enemy",
+    "path":"folders/Objects/Enemy.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_character_parent",
+    "path":"objects/obj_character_parent/obj_character_parent.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -27,10 +30,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_collision",
-    "path":"sprites/spr_collision/spr_collision.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
