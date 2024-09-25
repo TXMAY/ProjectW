@@ -21,7 +21,7 @@ if(check_states_compare("move","attack_air"))
 }
 	
 // 상하 이동
-if(move_y<8) move_y+=0.5;	// 중력 추가
+if(move_y<grav_max) move_y+=grav_speed;	// 중력 추가
 
 if(!place_meeting(x,y+move_y,obj_collision))	// 밑에 땅이 없다면
 {

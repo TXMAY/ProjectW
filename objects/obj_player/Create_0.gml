@@ -10,6 +10,5 @@ event_inherited();
 life=3;			// 목숨
 global.points=0;		// 점수
 health_bar_flag=false;
-
-
+prev_life=life;
 

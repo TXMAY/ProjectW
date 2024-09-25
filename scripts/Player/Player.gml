@@ -27,6 +27,6 @@ function player_attack(){
 				change_sprite(spr_player_attack_air1_mask);
 			}
 		}
-		_collision.state=state;
+		//_collision.state=state;
 	}
 }

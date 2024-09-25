@@ -55,6 +55,7 @@
     {"id":{"name":"obj_item_generator","path":"objects/obj_item_generator/obj_item_generator.yy",},},
     {"id":{"name":"obj_life_item","path":"objects/obj_life_item/obj_life_item.yy",},},
     {"id":{"name":"obj_player_attack","path":"objects/obj_player_attack/obj_player_attack.yy",},},
+    {"id":{"name":"obj_player_health_bar","path":"objects/obj_player_health_bar/obj_player_health_bar.yy",},},
     {"id":{"name":"obj_player_old","path":"objects/obj_player_old/obj_player_old.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"obj_score","path":"objects/obj_score/obj_score.yy",},},

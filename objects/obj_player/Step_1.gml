@@ -6,3 +6,8 @@ if(life==0)
 	change_sprite(spr_player_die,false);
 	if(alarm[2]==-1) alarm[2]=game_get_speed(gamespeed_fps)*3;
 }
+if(prev_life!=life)
+{
+	prev_life=life;
+	health_bar_flag=true;
+}

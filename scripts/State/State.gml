@@ -3,7 +3,7 @@ function check_state(_state, _obj = self)
 {
 	return string_pos(_state, _obj.state);
 }
-// 오브젝트가 공격 중인지 확인
+// 다른 오브젝트가 공격 중인지 확인
 function check_attack()
 {
 	return string_pos("attack",other.state);
