@@ -48,6 +48,7 @@
     {"id":{"name":"obj_character_parent","path":"objects/obj_character_parent/obj_character_parent.yy",},},
     {"id":{"name":"obj_coin_item","path":"objects/obj_coin_item/obj_coin_item.yy",},},
     {"id":{"name":"obj_collision","path":"objects/obj_collision/obj_collision.yy",},},
+    {"id":{"name":"obj_enemy_fly","path":"objects/obj_enemy_fly/obj_enemy_fly.yy",},},
     {"id":{"name":"obj_enemy_generator","path":"objects/obj_enemy_generator/obj_enemy_generator.yy",},},
     {"id":{"name":"obj_enemy_old","path":"objects/obj_enemy_old/obj_enemy_old.yy",},},
     {"id":{"name":"obj_enemy_parent","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},},
