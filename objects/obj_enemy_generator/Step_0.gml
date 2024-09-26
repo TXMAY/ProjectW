@@ -3,5 +3,5 @@
 if(alarm[0]==-1)
 {
 	var _tick=game_get_speed(gamespeed_fps);
-	alarm[0]= random_range(_tick*10,_tick*15);
+	alarm[0]= random_range(_tick*5,_tick*7);
 }

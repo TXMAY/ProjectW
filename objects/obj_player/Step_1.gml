@@ -6,8 +6,12 @@ if(life==0)
 	change_sprite(spr_player_die,false);
 	if(alarm[2]==-1) alarm[2]=game_get_speed(gamespeed_fps)*3;
 }
-if(prev_life!=life)
+if(prev_life!=life and life!=0)
 {
 	prev_life=life;
 	health_bar_flag=true;
+}
+if(invincibility==false)
+{
+	image_alpha=1;
 }
