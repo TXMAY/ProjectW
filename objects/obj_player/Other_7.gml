@@ -10,6 +10,7 @@ if(state!="move")	// 이동 상태가 아닌 행동이 끝나면
 	else if(state=="roll" and alarm[1]==-1)	// 구르기가 끝났고 공격 받아서 무적 상태가 아니라면
 	{
 		alarm[1]=1;	// 무적 해제
+		alarm[4]=game_get_speed(gamespeed_fps)*2;
 	}
 	// 상태 복구
 	state="move";

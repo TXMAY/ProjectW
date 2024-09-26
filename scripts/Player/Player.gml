@@ -2,7 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 참조
 // 공격 함수
 function player_attack(){
-	if(!check_state("attack"))
+	if(!check_states_pos("attack"))
 	{
 		var _collision=instance_create_depth(obj_player.x,obj_player.y,obj_player.depth+1,obj_player_attack);
 		_collision.image_xscale=image_xscale;
@@ -21,7 +21,7 @@ function player_attack(){
 		{
 			// 공중이면 공중 공격
 			change_sprite(spr_player_attack_air1);
-			state="attack_air";
+			state="attack_air_move";
 			with(_collision)
 			{
 				change_sprite(spr_player_attack_air1_mask);

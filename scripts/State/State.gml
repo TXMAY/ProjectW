@@ -20,11 +20,12 @@ function check_states_compare()
 }
 
 // state들 중 일부라도 일치하는 state가 있는지 확인
-function check_states_pos()
+function check_states_pos(_state)
 {
-	for(i=0;i<argument_count;i++)
-	{
-		if(string_pos(self.state,argument[i])) return true;	
-	}
-	return false;
+	return string_pos(_state, self.state);
+	//for(i=0;i<argument_count;i++)
+	//{
+	//	if(string_pos(argument[i],self.state)) return true;	
+	//}
+	//return false;
 }
