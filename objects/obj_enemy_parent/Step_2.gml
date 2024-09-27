@@ -1,5 +1,4 @@
-/// @description 여기에 설명 삽입
-// 이 에디터에 코드를 작성할 수 있습니다
+/// @description 스프라이트 변경
 if(check_states_compare("move"))
 {
 	image_index=0;

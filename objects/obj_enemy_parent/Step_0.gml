@@ -1,11 +1,11 @@
-/// @description 여기에 설명 삽입
-// 이 에디터에 코드를 작성할 수 있습니다
-move_x=image_xscale;
+/// @description 이동
+move_x=image_xscale;	// 이동 방향을 이미지 방향으로 설정
 event_inherited();
 
+// 벽에 닿으면 이동 방향을 반대로 설정
 if(check_states_compare("move"))
 {
-	if(place_meeting(x+move_x*move_speed,y,obj_collision))	// 옆에 땅이 없다면
+	if(place_meeting(x+move_x*move_speed,y,obj_collision))
 	{
 		image_xscale*=-1;
 	}

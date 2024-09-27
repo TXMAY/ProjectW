@@ -1,7 +1,7 @@
-/// @description 여기에 설명 삽입
-// 이 에디터에 코드를 작성할 수 있습니다
-if(!check_states_compare("die"))
+/// @description 코인 아이템
+if(!check_states_compare("die")) // 죽은 상태가 아니면
 {
+	// 점수 증가 후 아이템 제거
 	global.points++;
 	instance_destroy(other);
 }

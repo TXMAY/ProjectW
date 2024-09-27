@@ -1,19 +1,17 @@
-/// @description 여기에 설명 삽입
-// 이 에디터에 코드를 작성할 수 있습니다
-//move_x=keyboard_check(vk_right)-keyboard_check(vk_left);	// 방향 결정
-
+/// @description 이동
 // 좌우 이동
 // 지상 공격이 아니고 데미지를 받지 않았을 때만 이동
-//if(move_x!=0 and check_states_compare("move","attack_air"))
-if(check_states_pos("move"))
+if(check_states_pos("move"))	// 기본 상태라면
 {
-	if(!place_meeting(x+move_x*move_speed,y,obj_collision))	// 옆에 땅이 없다면
+	// 옆에 땅이 없다면
+	if(!place_meeting(x+move_x*move_speed,y,obj_collision))
 	{
 		x+=move_x*move_speed;	// 좌우 이동
 	}
 	else
 	{
-		if(!place_meeting(x+sign(move_x),y,obj_collision))	// 덜 붙었다면
+		// 덜 붙었다면
+		if(!place_meeting(x+sign(move_x),y,obj_collision))
 		{
 			x+=sign(move_x);	// 붙을 때까지 이동
 		}

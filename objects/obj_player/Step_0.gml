@@ -4,13 +4,13 @@ move_x=keyboard_check(vk_right)-keyboard_check(vk_left);	// 방향 결정
 event_inherited();
 if(check_states_compare("roll"))	// 구르기 이동
 {
-	if(!place_meeting(x+move_speed*1.5*image_xscale,y,obj_collision))	// 옆에 땅이 없다면
+	if(!place_meeting(x+move_speed*1.5*image_xscale,y,obj_collision))
 	{
 		x+=move_speed*1.5*image_xscale;
 	}
 	else
 	{
-		if(!place_meeting(x+sign(image_xscale),y,obj_collision))	// 덜 붙었다면
+		if(!place_meeting(x+sign(image_xscale),y,obj_collision))
 		{
 			x+=sign(image_xscale);	// 붙을 때까지 이동
 		}
@@ -31,4 +31,8 @@ if(check_states_compare("move"))
 	else if(move_y<0) change_sprite(spr_player_jump, false);
 	else if(move_x!=0) change_sprite(spr_player_move);	// 걷는 중
 	else change_sprite(spr_player_idle);	// 기본
+}
+if(check_states_compare("die"))
+{
+	change_sprite(spr_player_die,false);
 }

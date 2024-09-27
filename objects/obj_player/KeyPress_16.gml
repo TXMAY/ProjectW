@@ -1,10 +1,10 @@
 /// @description 여기에 설명 삽입
-// 이 에디터에 코드를 작성할 수 있습니다
-if(grounded and check_states_compare("move") and roll)	// 땅에 닿았고 기본 상태라면
+// 땅에 닿았고 기본 상태이고 구르기가 쿨타임이 아니라면
+if(grounded and check_states_compare("move") and roll)
 {
 	// 구르기
 	state="roll"
 	invincibility=true;	// 구르는 동안 무적
 	change_sprite(spr_player_roll);
-	roll=false;
+	roll=false;	// 쿨타임 동안 구르지 못하게 설정
 }
