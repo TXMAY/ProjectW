@@ -24,7 +24,6 @@ if(move_y<grav_max) move_y+=grav_speed;	// 중력 추가
 if(!place_meeting(x,y+move_y,obj_collision))	// 밑에 땅이 없다면
 {
 	y+=move_y;	// 상하 이동
-	grounded=false;
 }
 else	// 아니라면 땅이 있다면 완전히 붙었는지 확인
 {
@@ -34,5 +33,34 @@ else	// 아니라면 땅이 있다면 완전히 붙었는지 확인
 	}
 	
 	move_y=0;	// 초기화
+}
+/*move_y+=grav_speed;
+if(place_meeting(x+move_x,y,obj_collision))
+{
+	while(abs(move_x)>0.1)
+	{
+		move_x*=0.5;
+		if(!place_meeting(x+move_x,y,obj_collision))
+		{
+			x+=move_x;
+		}
+	}
+	move_x=0;
+}
+if(check_states_pos("move")) x+=move_x*move_speed;
+
+grounded=false;
+if(place_meeting(x,y+move_y,obj_collision))
+{
+	while(abs(move_y)>0.1)
+	{
+		move_y*=0.5;
+		if(!place_meeting(x,y+move_y,obj_collision))
+		{
+			y+=move_y;
+		}
+	}
+	move_y=0;
 	grounded=true;
 }
+y+=move_y;*/

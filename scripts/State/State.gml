@@ -1,8 +1,3 @@
-// 특정 state인지 확인
-function check_state(_state, _obj = self)
-{
-	return string_pos(_state, _obj.state);
-}
 // 다른 오브젝트가 공격 중인지 확인
 function check_attack()
 {
@@ -23,9 +18,4 @@ function check_states_compare()
 function check_states_pos(_state)
 {
 	return string_pos(_state, self.state);
-	//for(i=0;i<argument_count;i++)
-	//{
-	//	if(string_pos(argument[i],self.state)) return true;	
-	//}
-	//return false;
 }

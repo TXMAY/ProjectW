@@ -14,5 +14,5 @@ if(check_states_compare("move")	// 이동 상태고
 )
 {
 	alarm[0]=1;	// 공격 이벤트 시작
-	reload=true;
+	reload=true;	// 재장전
 }

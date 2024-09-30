@@ -24,11 +24,11 @@ if(check_states_compare("move"))
 		else
 		{
 			// 공중이면 공중 공격
-			change_sprite(spr_player_attack_air1);
+			change_sprite(spr_player_attack_air_move1);
 			state="attack_air_move";
 			with(_collision)
 			{
-				change_sprite(spr_player_attack_air1_mask);
+				change_sprite(spr_player_attack_air_move1_mask);
 			}
 		}
 	}

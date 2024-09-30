@@ -4,13 +4,13 @@ var _type=irandom_range(0, 2);
 switch(_type)
 {
 	case 0:
-		instance_create_depth(x,y,obj_player.depth+1,obj_enemy);
+		instance_create_depth(x,y,obj_player.depth+2,obj_enemy);
 		break;
 	case 1:
 	var _y=irandom_range(96,192);
-		instance_create_depth(x,_y,obj_player.depth+1,obj_enemy_fly);
+		instance_create_depth(x,_y,obj_player.depth+2,obj_enemy_fly);
 		break;
 	case 2:
-		instance_create_depth(x,y,obj_player.depth+1,obj_enemy_ranged);
+		instance_create_depth(x,y,obj_player.depth+2,obj_enemy_ranged);
 		break;
 }
