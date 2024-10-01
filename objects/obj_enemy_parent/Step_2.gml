@@ -14,4 +14,9 @@ else if(check_states_compare("attack"))
 else if(check_states_compare("damaged"))
 {
 	image_index=3;
+	if(alarm[1]==-1)
+	{
+		alarm[1]=game_get_speed(gamespeed_fps)/2;
+		alarm[0]=-1;
+	}
 }

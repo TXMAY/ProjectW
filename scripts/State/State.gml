@@ -1,9 +1,3 @@
-// 다른 오브젝트가 공격 중인지 확인
-function check_attack()
-{
-	return string_pos("attack",other.state);
-}
-
 // state들 중 완전히 일치하는 state가 있는지 확인
 function check_states_compare()
 {

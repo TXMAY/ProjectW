@@ -18,5 +18,3 @@ roll=true;	// 구르기 스킬 활성화 변수
 enemy_count=0;	// 현재 적 수
 enemy_limit=15;	// 최대 적 수
 instance_create_depth(x,y,self.depth,obj_player_health_bar);	// 체력바 오브젝트 생성
-
-//game_set_speed(30,gamespeed_fps)

@@ -3,13 +3,13 @@
 
 //if(check_states_pos("attack"))
 //{
-	with(other)
+with(other)
+{
+	if(!check_states_compare("damaged"))
 	{
-		if(!check_states_compare("damaged"))
-		{
-			state="damaged";
-			life--;
-			alarm[0]=game_get_speed(gamespeed_fps)/2;
-		}
+		state="damaged";
+		life--;
+		//alarm[0]=game_get_speed(gamespeed_fps)/2;
 	}
+}
 //}

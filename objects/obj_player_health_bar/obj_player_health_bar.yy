@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_health_bar",
-    "path":"sprites/spr_health_bar/spr_health_bar.yy",
+    "name":"spr_player_health_bar",
+    "path":"sprites/spr_player_health_bar/spr_player_health_bar.yy",
   },
   "spriteMaskId":null,
   "visible":true,

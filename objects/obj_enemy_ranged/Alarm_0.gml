@@ -18,11 +18,5 @@ else if(check_states_compare("attack"))
 {
 	//image_index=0;
 	state="move";
-	alarm[1]=game_get_speed(gamespeed_fps)*3;
-}
-
-if(check_states_compare("damaged"))
-{
-	image_index=0;
-	state="move";
+	alarm[2]=game_get_speed(gamespeed_fps)*3;
 }
