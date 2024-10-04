@@ -2,6 +2,9 @@
 if(life==0)	// 목숨이 다 떨어지면(죽은 상태가 되면)
 {
 	// 점수 증가 후 삭제
-	global.points++;
+	with(obj_player)
+	{
+		points++;
+	}
 	instance_destroy();
 }

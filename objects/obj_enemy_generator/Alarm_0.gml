@@ -14,3 +14,6 @@ switch(_type)
 		instance_create_depth(x,y,obj_player.depth+2,obj_enemy_ranged);
 		break;
 }
+
+var _tick=game_get_speed(gamespeed_fps);
+alarm[0]= random_range(_tick*3,_tick*6);

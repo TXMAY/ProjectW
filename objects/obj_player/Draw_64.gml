@@ -15,4 +15,4 @@ draw_set_valign(fa_middle);
 //draw_text(x,y+100,"grounded : "+string(grounded));
 // 스코어 및 적 수 표시
 draw_text(view_wport[0]/2,25,"enemy : "+string(enemy_count)+"/"+string(enemy_limit));
-draw_text(view_wport[0]/4,25,"score : "+string(global.points));
+draw_text(view_wport[0]/4,25,"score : "+string(points));

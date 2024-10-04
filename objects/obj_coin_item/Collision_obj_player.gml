@@ -5,6 +5,6 @@ with(other)
 {
 	if(!check_states_compare("die")) // 죽은 상태가 아니면
 	{
-		global.points++;
+		points++;
 	}
 }
