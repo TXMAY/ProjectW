@@ -9,7 +9,7 @@ event_inherited();	// 코드 상속
 // state 종류
 // attack_air_move : 공중 공격(이동 가능)
 // die : 죽음(게임오버)
-
+invincibility=false;	// 무적 여부
 points=0;		// 점수
 grounded=false;			// 땅 위에 서 있는지 유무
 health_bar_flag=false;	// 체력바 표시용 변수

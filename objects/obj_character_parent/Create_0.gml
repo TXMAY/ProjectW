@@ -11,5 +11,3 @@ state="move";			// 캐릭터 상태
 // move : 이동(기본)
 // attack : 공격
 // damaged : 피격
-
-invincibility=false;	// 무적 여부

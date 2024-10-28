@@ -1,9 +1,9 @@
 /// @description 상태 변경
 //if(state!="move")	// 이동 상태가 아닌 상태가 끝나면
 //{
-	if(state=="damaged")	// 공격 받았다면 무적 실행
+	if(state=="damaged")	// 공격 받았다면 무적 애니메이션 실행
 	{
-		alarm[0]=1;	// 무적 적용
+		alarm[0]=1;	// 무적 애니메이션
 		alarm[1]=game_get_speed(gamespeed_fps);	// 1초 후 무적 해제
 	}
 	else if(state=="roll")	// 구르기가 끝났다면
